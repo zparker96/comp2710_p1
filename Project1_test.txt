@@ -1,0 +1,332 @@
+Test 1: Name Entry Test 
+	Case 1 output: name without any white space
+		
+		What's your name? Please do not include any spaces: Zac
+		
+		~~~Welcome to Shelby Hall, Zac!~~~
+		
+		1) Start a New Game
+		2) How to Play
+		3) View High Scores
+		4) Quit
+		
+		Choose an option (1, 2, 3, or 4):
+		
+	Case 2 output: name with white space 
+	
+		What's your name? Please do not include any spaces: Zac Parker
+		
+		Please do not include any spaces in your name. All other characters are fine.
+		Enter your name:
+		
+-------------------------------
+	
+Test 2: Main Menu Test 
+	Case 1 output: start new game
+	
+		Choose an option (1, 2, 3, or 4): 1
+		
+		Entering Shelby Hall...
+		
+		You're 20 steps away from the end of the hall.
+		        1) Move forward
+		        2) Read technical papers
+		        3) Pickpocket a passerby
+		        4) View character stats
+		        5) Quit game
+		
+		Choose an action:
+	
+	Case 2 output: view tutorial
+	
+		Choose an option (1, 2, 3, or 4): 2
+		
+		~~~HOW TO PLAY~~~
+		
+		Attributes:
+		         - Once you've entered a game, you will begin your 20-step journey through Shelby Hall.
+		         - You will have three attributes: intelligence, money (displayed in dollars), and time (displayed in minutes).
+		         - If any of these attributes reaches 0 at any point, you lose the game.
+		         - If an attribute hits 0 on the same turn that you reach the end, you'll still lose the game; be wary!
+		
+		Actions:
+		         - You can choose to move, read technical papers, pickpocket a passerby, view character stats, or quit the game.
+		         - Moving, reading, and pickpocketing will all reduce your remaining time by 1.
+		         - However, viewing your character stats will not. Feel free to check your stats often!
+		         - Only moving your character will reduce the number of steps needed to reach the end.
+		         - If you successfully reach the end, then you win!
+		
+		Moving:
+		         - Moving your character could result in a number of different scenarios.
+		         - For example, you could encounter a puzzle in which you need to input the correct answer.
+		         - In this case, if you answer the question correctly, you will gain a random amount of a random attribute.
+		         - If you answer the question incorrectly, you will lose a random amount of a random attribute.
+		         - A number of other things that affect your attributes could also occur; you never know what'll happen!
+		         - Be careful and try to make sure that no single attribute is too low, or you might lose the game!
+		
+		High scores:
+		         - Your high score is calculated by multiplying your three attributes together at the end of the game.
+		         - If you lose the game, then your high score won't be calculated at all.
+		         - If your score is within the top 10, then it will be saved and will be shown on the high scores page.
+		
+		Good luck, and have fun!
+		
+		1) Start a New Game
+		2) How to Play
+		3) View High Scores
+		4) Quit
+		
+		Choose an option (1, 2, 3, or 4):
+	
+	Case 3 output: view top 10 highscores 
+	
+		Choose an option (1, 2, 3, or 4): 3
+		
+		Top 10 High Scores:
+		        1. Zac   2904
+		        2. ---   0
+		        3. ---   0
+		        4. ---   0
+		        5. ---   0
+		        6. ---   0
+		        7. ---   0
+		        8. ---   0
+		        9. ---   0
+		        10. --   0
+		
+		1) Start a New Game
+		2) How to Play
+		3) View High Scores
+		4) Quit
+		
+		Choose an option (1, 2, 3, or 4):
+	
+	Case 4 output: quit game
+	
+		Choose an option (1, 2, 3, or 4): 4
+		
+		Are you sure you want to quit? (Y/N): Y
+		
+		Thanks for playing!
+		Exiting program...
+	
+	Case 5 output: invalid input
+		
+		Choose an option (1, 2, 3, or 4): 5
+		Your input was invalid. Please enter a valid input (1, 2, 3, or 4):
+	
+-----------------------------------------------
+	
+Test 3: In-Game Options Menu Test
+	Case 1 output: move
+	
+		Choose an action: 1
+		
+		You move forward one step, and...
+		
+		You encounter a student! They ask you to critique their paper.
+		
+		They tipped you $2. Could've been better...
+		
+		You're 16 steps away from the end of the hall.
+		        1) Move forward
+		        2) Read technical papers
+		        3) Pickpocket a passerby
+		        4) View character stats
+		        5) Quit game
+		
+		Choose an action:
+	
+	Case 2 output: read technical papers
+	
+		Choose an action: 2
+		
+		You decide to read some technical papers that you have on-hand.
+		
+		Wow! Absolutely enthralling! You feel like a new person.
+		You gained 5 intelligence!
+		
+		You're 20 steps away from the end of the hall.
+		        1) Move forward
+		        2) Read technical papers
+		        3) Pickpocket a passerby
+		        4) View character stats
+		        5) Quit game
+		
+		Choose an action:
+	
+	Case 3 output: pickpocket 
+	
+		You decide to pickpocket a passerby. Someone walks by...
+		
+		You snatch their wallet. There's a $10 bill inside. Wow, that's more than you make in an hour!
+		You gained $10!
+		
+		You're 20 steps away from the end of the hall.
+		        1) Move forward
+		        2) Read technical papers
+		        3) Pickpocket a passerby
+		        4) View character stats
+		        5) Quit game
+		
+		Choose an action:
+	
+	Case 4 output: view character 
+	
+		Choose an action: 4
+		
+		Character statistics:
+		        Intelligence: 10
+		        Money: $10
+		        Minutes left: 25
+		
+		Choose an action:
+	
+	Case 5 output: quit game 
+	
+		Choose an action: 5
+		
+		Are you sure? (Y/N): Y
+		
+		Couldn't take the heat, huh?
+		What a pathetic way to go out. Oh well...
+		
+		YOU DIE.
+		Return to main menu? (Y/N):
+	
+	Case 6 output: invalid input
+	
+		Choose an action: 6
+		Your input was invalid. Please enter a valid input (1, 2, 3, 4, or 5):
+	
+------------------------------------
+	
+Test 4: In-Game Puzzle Test
+	Case 1 output: correct answer
+	
+		Choose an action: 1
+		
+		You move forward one step, and...
+		
+		You encounter a puzzle! Make sure you type your answer in all CAPITAL LETTERS.
+		
+		If you melt 10g of ice in 60g of water, how many grams of water will you end up with?
+		70
+		
+		CORRECT!
+		You were rewarded with 3 extra minutes!
+		
+		You're 19 steps away from the end of the hall.
+		        1) Move forward
+		        2) Read technical papers
+		        3) Pickpocket a passerby
+		        4) View character stats
+		        5) Quit game
+		
+		Choose an action:
+	
+	Case 2 output: incorrect answer 
+	
+		Choose an action: 1
+		
+		You move forward one step, and...
+		
+		You encounter a puzzle! Make sure you type your answer in all CAPITAL LETTERS.
+		
+		Solve the following equation: 5 - 2 * 3 + 15 / 5 + 3
+		PI
+		
+		INCORRECT!
+		You lost 3 intelligence.
+		
+		You're 13 steps away from the end of the hall.
+		        1) Move forward
+		        2) Read technical papers
+		        3) Pickpocket a passerby
+		        4) View character stats
+		        5) Quit game
+		
+		Choose an action:
+	
+------------------------------
+	
+Test 5: End-of-game Test 
+	Case 1 output: user loses the game
+	
+		Choose an action: 3
+		
+		You decide to pickpocket a passerby. Someone walks by...
+		
+		You snatch their wallet. There's $3 inside. Decent!
+		You gained $3!
+		
+		You ran out of time! You feel so rushed that you trip and fall to your demise.
+		It was a sad way to go...
+		
+		YOU DIE.
+		Return to main menu? (Y/N): Y
+		
+		Returning to main menu...
+		
+		What's your name? Please do not include any spaces:
+	
+	Case 2 output: user wins game but fails to get high score
+	
+		Choose an action: 1
+		
+		You move forward one step, and...
+		
+		You encounter a professor! He starts talking to you...
+		
+		Absolutely brilliant! This professor astounds you with his wisdom.
+		You gained 3 intelligence!
+		
+		Congratulations! You reached the end!
+		YOU WIN!
+		Your name: Zac
+		Your score: 3696
+		
+		Top 10 High Scores:
+		        1. Placeholder   9999
+		        2. Placeholder   9998
+		        3. Placeholder   9997
+		        4. Placeholder   9996
+		        5. Placeholder   9995
+		        6. Placeholder   9994
+		        7. Placeholder   9993
+		        8. Placeholder   9992
+		        9. Placeholder   9991
+		        10. Placeholder   9990
+		
+		Return to main menu? (Y/N):
+	
+	Case 3 output: user wins and gets a high score 
+	
+		Choose an action: 1
+		
+		You move forward one step, and...
+		
+		You remember that you have some grunt work you need to take care of!
+		
+		That work was so mindless that you actually feel more stupid than ever.
+		You lost 2 intelligence.
+		
+		Congratulations! You reached the end!
+		YOU WIN!
+		Your name: Zac
+		Your score: 5202
+		
+		Top 10 High Scores:
+		        1. Placeholder   9999
+		        2. Placeholder   9998
+		        3. Placeholder   9997
+		        4. Placeholder   9996
+		        5. Placeholder   9995
+		        6. Zac   5202
+		        7. Placeholder   100
+		        8. Placeholder   99
+		        9. Placeholder   98
+		        10. Placeholder   97
+		
+		Return to main menu? (Y/N):
+		
